@@ -5,7 +5,7 @@ const divider = require("./divider")
 
 const {topLeft, topRight, bottomLeft, bottomRight} = corners[style.corners]
 
-const width = 57
+const width = 61
 const topBorder = `${topLeft}${"─".repeat(width)}${topRight}`
 const bottomBorder = `${bottomLeft}${"─".repeat(width)}${bottomRight}`
 const dividerLine = `├${divider[style.divider].repeat(width)}┤`
@@ -14,18 +14,18 @@ const blankLine = `│${" ".repeat(width)}│`
 const card = `
     ${topBorder}
     ${blankLine}
-    │    ${me.name} / ${me.handle}                           │
-    │    ${me.title} @ ${me.company}                           │
+    │    ${me.name} / ${me.handle}                               │
+    │    ${me.title} @ ${me.company}                               │
     ${blankLine}
-    │     Website: ${me.website}                    │
-    │      Twitch: ${me.twitch}              │
-    │      GitHub: ${me.github}             │
-    │     Twitter: ${me.twitter}            │
-    │     YouTube: ${me.youtube}            │
-    │    LinkedIn: ${me.linkedin}        │
+    │         Website: ${me.website}                    │
+    │          Twitch: ${me.twitch}              │
+    │          GitHub: ${me.github}             │
+    │         Twitter: ${me.twitter}            │
+    │         YouTube: ${me.youtube}            │
+    │        LinkedIn: ${me.linkedin}        │
     ${blankLine}
     ${dividerLine}
-    │                                        npx ${me.handle}  │
+    │                                            npx ${me.handle}  │
     ${bottomBorder}
 `
 
