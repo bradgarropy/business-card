@@ -2,10 +2,10 @@ const normal = "─"
 const triple = "┄"
 const quadruple = "┈"
 
-const divider = {
+const dividers = {
     normal,
     triple,
     quadruple,
 }
 
-module.exports = divider
+module.exports = dividers

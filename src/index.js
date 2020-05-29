@@ -1,31 +1,49 @@
-const me = require("../data/me.json")
-const style = require("../data/style.json")
+const chalk = require("chalk")
 const corners = require("./corners")
-const divider = require("./divider")
-
-const {topLeft, topRight, bottomLeft, bottomRight} = corners[style.corners]
+const me = require("../data/me.json")
+const dividers = require("./dividers")
+const style = require("../data/style.json")
 
 const width = 61
-const topBorder = `${topLeft}${"─".repeat(width)}${topRight}`
-const bottomBorder = `${bottomLeft}${"─".repeat(width)}${bottomRight}`
-const dividerLine = `├${divider[style.divider].repeat(width)}┤`
-const blankLine = `│${" ".repeat(width)}│`
+const divider = dividers[style.divider]
+const {topLeft, topRight, bottomLeft, bottomRight} = corners[style.corners]
+
+const topBorder = [
+    chalk.yellow(topLeft),
+    chalk.gray("─".repeat(width)),
+    chalk.yellow(topRight),
+].join("")
+
+const bottomBorder = [
+    chalk.yellow(bottomLeft),
+    chalk.gray("─".repeat(width)),
+    chalk.yellow(bottomRight),
+].join("")
+
+const dividerLine = [
+    chalk.gray("├"),
+    chalk.gray(divider.repeat(width)),
+    chalk.gray("┤"),
+].join("")
+
+const border = chalk.gray("│")
+const blankLine = `${border}${" ".repeat(width)}${border}`
 
 const card = `
     ${topBorder}
     ${blankLine}
-    │    ${me.name} / ${me.handle}                               │
-    │    ${me.title} @ ${me.company}                               │
+    ${border}    ${me.name} / ${me.handle}                               ${border}
+    ${border}    ${me.title} @ ${me.company}                               ${border}
     ${blankLine}
-    │         Website: ${me.website}                    │
-    │          Twitch: ${me.twitch}              │
-    │          GitHub: ${me.github}             │
-    │         Twitter: ${me.twitter}            │
-    │         YouTube: ${me.youtube}            │
-    │        LinkedIn: ${me.linkedin}        │
+    ${border}         Website: ${me.website}                    ${border}
+    ${border}          Twitch: ${me.twitch}              ${border}
+    ${border}          GitHub: ${me.github}             ${border}
+    ${border}         Twitter: ${me.twitter}            ${border}
+    ${border}         YouTube: ${me.youtube}            ${border}
+    ${border}        LinkedIn: ${me.linkedin}        ${border}
     ${blankLine}
     ${dividerLine}
-    │                                            npx ${me.handle}  │
+    ${border}                                            npx ${me.handle}  ${border}
     ${bottomBorder}
 `
 
