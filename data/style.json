@@ -1,4 +1,6 @@
 {
     "corners": "double",
-    "divider": "triple"
+    "divider": "triple",
+    "base": "white",
+    "accent": "blue"
 }

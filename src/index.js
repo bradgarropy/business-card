@@ -6,70 +6,40 @@ const me = require("../data/me.json")
 const dividers = require("./dividers")
 const style = require("../data/style.json")
 
-const link = url => chalk.blue(url)
+const base = chalk[style.base]
+const accent = chalk[style.accent]
 
-const platform = name => chalk.white(`${name}: `)
-
-const command = handle => chalk.blue(`npx ${handle}`)
+const spaces = count => " ".repeat(count)
+const name = (name, handle) => `${accent(name)} / ${accent(handle)}`
+const title = (title, company) => `${title} @ ${company}`
+const link = (name, url) => `${base(name)}: ${accent(url)}`
+const command = handle => accent(`npx ${handle}`)
 
 const width = 61
 const divider = dividers[style.divider]
 const {topLeft, topRight, bottomLeft, bottomRight} = corners[style.corners]
 
-const topBorder = [
-    chalk.white(topLeft),
-    chalk.white("─".repeat(width)),
-    chalk.white(topRight),
-].join("")
-
-const bottomBorder = [
-    chalk.white(bottomLeft),
-    chalk.white("─".repeat(width)),
-    chalk.white(bottomRight),
-].join("")
-
-const dividerLine = [
-    chalk.white("├"),
-    chalk.white(divider.repeat(width)),
-    chalk.white("┤"),
-].join("")
-
-const border = chalk.white("│")
-const blankLine = `${border}${" ".repeat(width)}${border}`
+const topBorder = base(topLeft + "─".repeat(width) + topRight)
+const bottomBorder = base(bottomLeft + "─".repeat(width) + bottomRight)
+const dividerLine = base("├" + divider.repeat(width) + "┤")
+const border = base("│")
+const blankLine = base(border + spaces(width) + border)
 
 const card = `
     ${topBorder}
     ${blankLine}
-    ${border}    ${chalk.blue(me.name)} ${chalk.white("/")} ${chalk.blue(
-    me.handle,
-)}                               ${border}
-    ${border}    ${me.title} @ ${
-    me.company
-}                               ${border}
+    ${border + spaces(4) + name(me.name, me.handle) + spaces(31) + border}
+    ${border + spaces(4) + title(me.title, me.company) + spaces(31) + border}
     ${blankLine}
-    ${border}         ${platform("Website")}${link(
-    me.website,
-)}                    ${border}
-    ${border}          ${platform("Twitch")}${link(
-    me.twitch,
-)}              ${border}
-    ${border}          ${platform("GitHub")}${link(
-    me.github,
-)}             ${border}
-    ${border}         ${platform("Twitter")}${link(
-    me.twitter,
-)}            ${border}
-    ${border}         ${platform("YouTube")}${link(
-    me.youtube,
-)}            ${border}
-    ${border}        ${platform("LinkedIn")}${link(
-    me.linkedin,
-)}        ${border}
+    ${border + spaces(9) + link("Website", me.website) + spaces(20) + border}
+    ${border + spaces(10) + link("Twitch", me.twitch) + spaces(14) + border}
+    ${border + spaces(10) + link("GitHub", me.github) + spaces(13) + border}
+    ${border + spaces(9) + link("Twitter", me.twitter) + spaces(12) + border}
+    ${border + spaces(9) + link("YouTube", me.youtube) + spaces(12) + border}
+    ${border + spaces(8) + link("LinkedIn", me.linkedin) + spaces(8) + border}
     ${blankLine}
     ${dividerLine}
-    ${border}                                            ${command(
-    me.handle,
-)}  ${border}
+    ${border + spaces(44) + command(me.handle) + spaces(2) + border}
     ${bottomBorder}
 `
 
