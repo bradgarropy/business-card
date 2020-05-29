@@ -4,46 +4,70 @@ const me = require("../data/me.json")
 const dividers = require("./dividers")
 const style = require("../data/style.json")
 
+const link = url => chalk.blue(url)
+
+const platform = name => chalk.white(`${name}: `)
+
+const command = handle => chalk.blue(`npx ${handle}`)
+
 const width = 61
 const divider = dividers[style.divider]
 const {topLeft, topRight, bottomLeft, bottomRight} = corners[style.corners]
 
 const topBorder = [
-    chalk.yellow(topLeft),
-    chalk.gray("─".repeat(width)),
-    chalk.yellow(topRight),
+    chalk.white(topLeft),
+    chalk.white("─".repeat(width)),
+    chalk.white(topRight),
 ].join("")
 
 const bottomBorder = [
-    chalk.yellow(bottomLeft),
-    chalk.gray("─".repeat(width)),
-    chalk.yellow(bottomRight),
+    chalk.white(bottomLeft),
+    chalk.white("─".repeat(width)),
+    chalk.white(bottomRight),
 ].join("")
 
 const dividerLine = [
-    chalk.gray("├"),
-    chalk.gray(divider.repeat(width)),
-    chalk.gray("┤"),
+    chalk.white("├"),
+    chalk.white(divider.repeat(width)),
+    chalk.white("┤"),
 ].join("")
 
-const border = chalk.gray("│")
+const border = chalk.white("│")
 const blankLine = `${border}${" ".repeat(width)}${border}`
 
 const card = `
     ${topBorder}
     ${blankLine}
-    ${border}    ${me.name} / ${me.handle}                               ${border}
-    ${border}    ${me.title} @ ${me.company}                               ${border}
+    ${border}    ${chalk.blue(me.name)} ${chalk.white("/")} ${chalk.blue(
+    me.handle,
+)}                               ${border}
+    ${border}    ${me.title} @ ${
+    me.company
+}                               ${border}
     ${blankLine}
-    ${border}         Website: ${me.website}                    ${border}
-    ${border}          Twitch: ${me.twitch}              ${border}
-    ${border}          GitHub: ${me.github}             ${border}
-    ${border}         Twitter: ${me.twitter}            ${border}
-    ${border}         YouTube: ${me.youtube}            ${border}
-    ${border}        LinkedIn: ${me.linkedin}        ${border}
+    ${border}         ${platform("Website")}${link(
+    me.website,
+)}                    ${border}
+    ${border}          ${platform("Twitch")}${link(
+    me.twitch,
+)}              ${border}
+    ${border}          ${platform("GitHub")}${link(
+    me.github,
+)}             ${border}
+    ${border}         ${platform("Twitter")}${link(
+    me.twitter,
+)}            ${border}
+    ${border}         ${platform("YouTube")}${link(
+    me.youtube,
+)}            ${border}
+    ${border}        ${platform("LinkedIn")}${link(
+    me.linkedin,
+)}        ${border}
     ${blankLine}
     ${dividerLine}
-    ${border}                                            npx ${me.handle}  ${border}
+    ${border}                                            ${command(
+    me.handle,
+)}  ${border}
     ${bottomBorder}
 `
 
