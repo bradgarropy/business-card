@@ -10,21 +10,21 @@
 
 _Digital business card._
 
-## 📦 Installation
+### 📦 Installation
 
 Installation is not required!, as you can run this package with [`npx`][npx].
 
-## 🥑 Usage
+### 🥑 Usage
 
 ```
 npx bradgarropy
 ```
 
-## 🕺🏼 Create Your Own
+### 🕺🏼 Create Your Own
 
 _In progress..._
 
-## 🎞 Credit
+### 🎞 Credit
 
 Inspired by [J.C. Hiatt][jc].  
 Accomplished with the help of this [article][article].
