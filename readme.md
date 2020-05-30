@@ -22,10 +22,6 @@ Installation is not required!, as you can run this package with [`npx`][npx].
 npx bradgarropy
 ```
 
-### 🕺🏼 Create Your Own
-
-_In progress..._
-
 ### 🎞 Credit
 
 Inspired by [J.C. Hiatt][jc].  
