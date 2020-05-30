@@ -31,7 +31,7 @@ _In progress..._
 Inspired by [J.C. Hiatt][jc].  
 Accomplished with the help of this [article][article].
 
-[card]: ./src/images/business-card.png
+[card]: images/business-card.png
 [npx]: https://npmjs.com/package/npx
 [jc]: https://twitter.com/jchiatt/status/1251700185840918531
 [article]: https://medium.com/@natterstefan/how-to-create-your-personal-npm-business-card-816dfc66ca8

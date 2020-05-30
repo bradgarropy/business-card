@@ -2,9 +2,9 @@
 
 const chalk = require("chalk")
 const corners = require("./corners")
-const me = require("./data/me.json")
+const me = require("../data/me.json")
 const dividers = require("./dividers")
-const style = require("./data/style.json")
+const style = require("../data/style.json")
 
 const base = chalk[style.base]
 const accent = chalk[style.accent]
