@@ -1,6 +1,6 @@
 {
     "name": "bradgarropy",
-    "version": "0.3.0",
+    "version": "0.4.0",
     "description": "🃏 npx business card",
     "keywords": [
         "npm",
@@ -8,7 +8,7 @@
         "chalk",
         "business-card"
     ],
-    "homepage": "<url>",
+    "homepage": "https://github.com/bradgarropy/business-card",
     "bugs": {
         "url": "https://github.com/bradgarropy/business-card/issues"
     },
