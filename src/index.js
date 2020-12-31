@@ -29,7 +29,7 @@ const card = `
     ${topBorder}
     ${blankLine}
     ${border + spaces(4) + name(me.name, me.handle) + spaces(31) + border}
-    ${border + spaces(4) + title(me.title, me.company) + spaces(31) + border}
+    ${border + spaces(4) + title(me.title, me.company) + spaces(24) + border}
     ${blankLine}
     ${border + spaces(9) + link("Website", me.website) + spaces(20) + border}
     ${border + spaces(10) + link("Twitch", me.twitch) + spaces(14) + border}
