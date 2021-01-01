@@ -61,8 +61,6 @@ You can customize certain visual aspects of the business card. Each one comes wi
 
 #### corners
 
-Special characters used for the corners of the business card.
-
 | Name         | Example |
 | ------------ | ------- |
 | `normal`     | `┌┐`    |
@@ -72,6 +70,8 @@ Special characters used for the corners of the business card.
 | `doubleTop`  | `╒╕`    |
 | `doubleSide` | `╓╖`    |
 
+Special characters used for the corners of the business card.
+
 ```json
 {
     "style": {"corners": "heavy"}
@@ -80,13 +80,13 @@ Special characters used for the corners of the business card.
 
 #### dividers
 
-Special characters used for the horizontal rule above the footer.
-
 | Name        | Example |
 | ----------- | ------- |
 | `normal`    | `─────` |
 | `triple`    | `┄┄┄┄┄` |
 | `quadruple` | `┈┈┈┈┈` |
+
+Special characters used for the horizontal rule above the footer.
 
 ```json
 {
@@ -96,8 +96,6 @@ Special characters used for the horizontal rule above the footer.
 
 #### baseColor
 
-The color of the borders, job line, and link labels. You can use any [`chalk`][chalk] color value.
-
 | Name            |
 | --------------- |
 | `black`         |
@@ -116,6 +114,8 @@ The color of the borders, job line, and link labels. You can use any [`chalk`][c
 | `magentaBright` |
 | `cyanBright`    |
 | `whiteBright`   |
+
+The color of the borders, job line, and link labels. You can use any [`chalk`][chalk] color value.
 
 ```json
 {
@@ -125,8 +125,6 @@ The color of the borders, job line, and link labels. You can use any [`chalk`][c
 
 #### accentColor
 
-The color of the name link, link urls, and footer text. You can use any [`chalk`][chalk] color value.
-
 | Name            |
 | --------------- |
 | `black`         |
@@ -145,6 +143,8 @@ The color of the name link, link urls, and footer text. You can use any [`chalk`
 | `magentaBright` |
 | `cyanBright`    |
 | `whiteBright`   |
+
+    The color of the name link, link urls, and footer text. You can use any [`chalk`][chalk] color value.
 
 ```json
 {
