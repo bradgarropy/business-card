@@ -51,7 +51,7 @@ Then edit the [`config.json`][config] file. The `info` section is all about you,
 }
 ```
 
-Finally, update the `name` field in the [`package.json`][package] and deploy to `npm`!
+Finally, update the `name` field in the [`package.json`][package] and publish to `npm`!
 
 > I highly recommend that the `name` field is your primary online username. (ex: `bradgarropy`)
 
