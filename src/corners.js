@@ -26,14 +26,14 @@ const double = {
     bottomRight: "╝",
 }
 
-const doubleH = {
+const doubleTop = {
     topLeft: "╒",
     topRight: "╕",
     bottomLeft: "╘",
     bottomRight: "╛",
 }
 
-const doubleV = {
+const doubleSide = {
     topLeft: "╓",
     topRight: "╖",
     bottomLeft: "╙",
@@ -45,8 +45,8 @@ const corners = {
     rounded,
     heavy,
     double,
-    doubleH,
-    doubleV,
+    doubleTop,
+    doubleSide,
 }
 
 module.exports = corners
