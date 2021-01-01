@@ -59,7 +59,7 @@ The `style` section controls different visual elements of the business card. Mor
 
 You can customize certain visual aspects of the business card. Each one comes with preset values for you to choose from.
 
-#### `corners`
+#### `style.corners`
 
 | Name         | Example |
 | ------------ | ------- |
@@ -78,7 +78,7 @@ Special characters used for the corners of the business card.
 }
 ```
 
-#### `dividers`
+#### `style.dividers`
 
 | Name        | Example |
 | ----------- | ------- |
@@ -94,7 +94,7 @@ Special characters used for the horizontal rule above the footer.
 }
 ```
 
-#### `baseColor`
+#### `style.baseColor`
 
 | Name            |
 | --------------- |
@@ -123,7 +123,7 @@ The color of the borders, job line, and link labels. You can use any [`chalk`][c
 }
 ```
 
-#### `accentColor`
+#### `style.accentColor`
 
 | Name            |
 | --------------- |
