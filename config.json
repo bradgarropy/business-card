@@ -1,0 +1,40 @@
+{
+    "info": {
+        "name": "Brad Garropy",
+        "handle": "bradgarropy",
+        "company": "Adobe",
+        "title": "Senior Frontend Developer",
+        "links": [
+            {
+                "name": "Website",
+                "url": "https://bradgarropy.com"
+            },
+            {
+                "name": "Twitch",
+                "url": "https://twitch.tv/bradgarropy"
+            },
+            {
+                "name": "GitHub",
+                "url": "https://github.com/bradgarropy"
+            },
+            {
+                "name": "Twitter",
+                "url": "https://twitter.com/bradgarropy"
+            },
+            {
+                "name": "YouTube",
+                "url": "https://youtube.com/bradgarropy"
+            },
+            {
+                "name": "LinkedIn",
+                "url": "https://linkedin.com/in/bradgarropy"
+            }
+        ]
+    },
+    "style": {
+        "corners": "double",
+        "divider": "triple",
+        "baseColor": "white",
+        "accentColor": "blue"
+    }
+}
