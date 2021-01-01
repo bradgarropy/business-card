@@ -51,11 +51,7 @@ Then edit the [`config.json`][config] file. The `info` section is all about you,
 }
 ```
 
-Finally, update the `name` field in the [`package.json`][package] and publish to `npm`!
-
-> I highly recommend that the `name` field is your primary online username. (ex: `bradgarropy`)
-
-Now anyone with `npm` installed can run `npx <username>` and see your business card!
+Finally, update the `name` field in the [`package.json`][package] and publish to `npm`! I highly recommend that the `name` field is your primary online username (ex: `bradgarropy`). Now anyone with `npm` installed can run `npx <username>` and see your business card!
 
 ### 🎨 Style Configuration
 
