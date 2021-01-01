@@ -1,11 +1,14 @@
 {
     "name": "bradgarropy",
-    "version": "2.0.0",
+    "version": "2.1.0",
     "description": "🃏 npx business card",
     "keywords": [
         "npm",
         "npx",
+        "eslint",
+        "prettier",
         "chalk",
+        "parcel",
         "business-card"
     ],
     "homepage": "https://github.com/bradgarropy/business-card",
