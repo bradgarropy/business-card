@@ -26,7 +26,7 @@ npx bradgarropy
 
 First, [fork][fork] this repository.
 
-Then edit the [`config.json`][config] file. Here's an example.
+Then edit the [`config.json`][config] file. The `info` section is all about you, and the `style` section controls different visual elements of the business card. Here's an example.
 
 ```json
 {
@@ -51,9 +51,11 @@ Then edit the [`config.json`][config] file. Here's an example.
 }
 ```
 
-The `info` section is all about you. The `handle` should describe your primary online username. `links` are displayed on the business card in the order specified.
+Finally, update the `name` field in the [`package.json`][package] and deploy to `npm`!
 
-The `style` section controls different visual elements of the business card. More information is provided in the [Style Configuration](#-style-configuration) section.
+> I highly recommend that the `name` field is your primary online username. (ex: `bradgarropy`)
+
+Now anyone with `npm` installed can run `npx <username>` and see your business card!
 
 ### 🎨 Style Configuration
 
@@ -157,6 +159,7 @@ The color of the name link, link urls, and footer text. You can use any [`chalk`
 Inspired by [J.C. Hiatt][jc].  
 Accomplished with the help of this [article][article].
 
+[package]: https://github.com/bradgarropy/business-card/blob/master/package.json
 [chalk]: https://github.com/chalk/chalk#readme
 [config]: https://github.com/bradgarropy/business-card/blob/master/config.json
 [fork]: https://github.com/bradgarropy/business-card/fork
