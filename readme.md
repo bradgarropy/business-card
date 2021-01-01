@@ -144,7 +144,7 @@ The color of the borders, job line, and link labels. You can use any [`chalk`][c
 | `cyanBright`    |
 | `whiteBright`   |
 
-    The color of the name link, link urls, and footer text. You can use any [`chalk`][chalk] color value.
+The color of the name link, link urls, and footer text. You can use any [`chalk`][chalk] color value.
 
 ```json
 {
