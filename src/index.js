@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const {info, style} = require("../config.json")
+const {info, links, style} = require("../config.json")
 const {
     getTopBorder,
     getBottomBorder,
@@ -19,7 +19,7 @@ const card = [
     getName(info.name, info.handle),
     getTitle(info.title, info.company),
     getBlankLine(),
-    ...info.links.map(link => getLink(link.name, link.url)),
+    ...links.map(link => getLink(link.name, link.url)),
     getBlankLine(),
     getDividerLine(style.divider),
     getCommand(info.handle),
