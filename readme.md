@@ -24,9 +24,21 @@ npx bradgarropy
 
 ### 🕺🏼 Create Your Own
 
-First, [fork][fork] this repository.
+First, [fork][fork] this repository, clone it your machine, and install the dependencies.
 
-Then edit the [`config.json`][config] file. The `info` section is all about you, and the `style` section controls different visual elements of the business card. Here's an example.
+```bash
+git clone https://github.com/bradgarropy/business-card.git
+cd business-card
+npm install
+```
+
+Next, use the `generator` to update the `config.json` file for you.
+
+```bash
+npm run generate
+```
+
+Or if you prefere, modify the [`config.json`][config] file by hand. The `info` section is all about you, and the `style` section controls different visual elements of the business card. Here's an example.
 
 ```json
 {
