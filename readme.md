@@ -34,14 +34,14 @@ Then edit the [`config.json`][config] file. The `info` section is all about you,
         "name": "Brad Garropy",
         "handle": "bradgarropy",
         "company": "Adobe",
-        "title": "Senior Frontend Developer",
-        "links": [
-            {
-                "name": "Website",
-                "url": "https://bradgarropy.com"
-            }
-        ]
+        "title": "Senior Frontend Developer"
     },
+    "links": [
+        {
+            "name": "Website",
+            "url": "https://bradgarropy.com"
+        }
+    ],
     "style": {
         "corners": "double",
         "divider": "triple",

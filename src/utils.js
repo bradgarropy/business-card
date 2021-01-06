@@ -1,7 +1,7 @@
 const colors = require("./colors")
 const {paddingLeft, indent, paddingRight} = require("./constants")
 const dividers = require("./dividers")
-const {info, links, style} = require("../config.json")
+const {links, style} = require("../config.json")
 
 const space = count => {
     return " ".repeat(count)

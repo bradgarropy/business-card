@@ -39,7 +39,7 @@
         "prepare": "npm run build",
         "lint": "eslint .",
         "lint:fix": "eslint . --fix",
-        "generate": "node src/generate.js"
+        "generate": "node src/generator/index.js"
     },
     "dependencies": {
         "chalk": "^4.1.0"
