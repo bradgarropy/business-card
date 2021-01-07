@@ -14,7 +14,7 @@ _Digital business card._
 
 ### 📦 Installation
 
-Installation is not required!, as you can run this package with [`npx`][npx].
+Installation is not required, as you can run this package with [`npx`][npx].
 
 ### 🥑 Usage
 
@@ -38,7 +38,7 @@ Next, use the `generator` to update the `config.json` file for you.
 npm run generate
 ```
 
-Or if you prefere, modify the [`config.json`][config] file by hand. The `info` section is all about you, and the `style` section controls different visual elements of the business card. Here's an example.
+Or if you prefer, modify the [`config.json`][config] file by hand. The `info` section is all about you, and the `style` section controls different visual elements of the business card. Here's an example.
 
 ```json
 {
