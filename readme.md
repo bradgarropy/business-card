@@ -32,13 +32,11 @@ cd business-card
 npm install
 ```
 
-Next, use the `generator` to create your configuration.
+Next, use the `generator` to create your configuration. You can also [modify the configuration][configuration] manually if you prefer.
 
 ```bash
 npm run generate
 ```
-
-> You can also [modify the configuration][configuration] manually if you prefer.
 
 Then, update the `name` field in [`package.json`][package]. I highly recommend that the `name` field matches your primary online username (ex: `bradgarropy`).
 
