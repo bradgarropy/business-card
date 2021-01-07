@@ -9,8 +9,11 @@ const generate = async () => {
         style: {},
     }
 
+    console.log("--- Describe yourself ---\n")
     const infoAnswers = await inquirer.prompt(infoQuestions)
     config.info = infoAnswers
+
+    console.log("\n\n--- Showcase links ---\n")
 
     let shouldContinue = true
 
@@ -23,6 +26,7 @@ const generate = async () => {
         shouldContinue = more
     }
 
+    console.log("\n\n--- Style your card ---\n")
     const styleAnswers = await inquirer.prompt(styleQuestions)
     config.style = styleAnswers
 

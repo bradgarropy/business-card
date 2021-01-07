@@ -27,12 +27,12 @@ const linkQuestions = [
     {
         type: "input",
         name: "name",
-        message: "Enter a link name.",
+        message: "Enter a link name:",
     },
     {
         type: "input",
         name: "url",
-        message: "Enter a url.",
+        message: "Enter a link url:",
     },
     {
         type: "confirm",
