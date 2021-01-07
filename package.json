@@ -9,7 +9,8 @@
         "prettier",
         "chalk",
         "parcel",
-        "business-card"
+        "business-card",
+        "inquirer"
     ],
     "homepage": "https://github.com/bradgarropy/business-card",
     "bugs": {
