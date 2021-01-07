@@ -72,6 +72,6 @@ npx bradgarropy
 [npx]: https://npmjs.com/package/npx
 [jc]: https://twitter.com/jchiatt/status/1251700185840918531
 [article]: https://medium.com/@natterstefan/how-to-create-your-personal-npm-business-card-816dfc66ca8
-[configuration]: /docs/configuration
+[configuration]: docs/configuration.md
 [publish]: https://docs.npmjs.com/cli/v6/commands/npm-publish
 [video]: https://youtu.be/S_wvHDOrac0
