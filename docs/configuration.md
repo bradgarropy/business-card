@@ -35,12 +35,12 @@ Here is an example configuration file.
 
 The `info` section describes who you are and where you work.
 
-| Name      | Example                     | Description            |
-| --------- | --------------------------- | ---------------------- |
-| `name`    | `Brad Garropy`              | Full name.             |
-| `handle`  | `bradgarropy`               | Primary online handle. |
-| `company` | `Adobe`                     | Company name.          |
-| `title`   | `Senior Frontend Developer` | Job title.             |
+| Name      | Example                     | Description              |
+| --------- | --------------------------- | ------------------------ |
+| `name`    | `Brad Garropy`              | Full name.               |
+| `handle`  | `bradgarropy`               | Primary online username. |
+| `company` | `Adobe`                     | Company name.            |
+| `title`   | `Senior Frontend Developer` | Job title.               |
 
 Special characters used for the corners of the business card.
 
