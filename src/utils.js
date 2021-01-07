@@ -1,7 +1,7 @@
 const colors = require("./colors")
 const {paddingLeft, indent, paddingRight} = require("./constants")
 const dividers = require("./dividers")
-const {info, style} = require("../config.json")
+const {links, style} = require("../config.json")
 
 const space = count => {
     return " ".repeat(count)
@@ -25,13 +25,13 @@ const getLinkLength = link => {
 }
 
 const getLongestLink = () => {
-    const lengths = info.links.map(link => getLinkLength(link))
+    const lengths = links.map(link => getLinkLength(link))
     const longestLink = Math.max(...lengths)
     return longestLink
 }
 
 const getLongestLinkName = () => {
-    const lengths = info.links.map(link => link.name.length)
+    const lengths = links.map(link => link.name.length)
     const longestLinkName = Math.max(...lengths)
     return longestLinkName
 }
@@ -43,7 +43,7 @@ const getWidth = () => {
 }
 
 const getFill = content => {
-    const width = getWidth(info.links)
+    const width = getWidth(links)
     const fill = width - paddingLeft - paddingRight - content.length
     return fill
 }

@@ -1,6 +1,6 @@
 {
     "name": "bradgarropy",
-    "version": "2.1.0",
+    "version": "2.2.0",
     "description": "🃏 npx business card",
     "keywords": [
         "npm",
@@ -9,7 +9,8 @@
         "prettier",
         "chalk",
         "parcel",
-        "business-card"
+        "business-card",
+        "inquirer"
     ],
     "homepage": "https://github.com/bradgarropy/business-card",
     "bugs": {
@@ -38,7 +39,8 @@
         "build": "parcel build src/index.js --target node --no-source-maps",
         "prepare": "npm run build",
         "lint": "eslint .",
-        "lint:fix": "eslint . --fix"
+        "lint:fix": "eslint . --fix",
+        "generate": "node src/generator/index.js"
     },
     "dependencies": {
         "chalk": "^4.1.0"
@@ -49,6 +51,7 @@
         "eslint": "^7.16.0",
         "eslint-config-prettier": "^7.1.0",
         "eslint-plugin-simple-import-sort": "^7.0.0",
+        "inquirer": "^7.3.3",
         "nodemon": "^2.0.6",
         "parcel-bundler": "^1.12.4",
         "parcel-plugin-clean-dist": "0.0.6",
