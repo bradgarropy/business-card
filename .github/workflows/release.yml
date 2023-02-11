@@ -11,11 +11,15 @@ jobs:
         steps:
             - name: "📚 checkout"
               uses: actions/checkout@v2.3.4
-            - name: "♻️ node"
+            - name: "🟢 node"
               uses: actions/setup-node@v2.1.4
               with:
                   node-version: 16
-                  registry-url: https://registry.npmjs.org
+                  registry-url: https://registry.npmjs.org/
+            - name: "📦 install"
+              run: npm ci
+            - name: "🧶 lint"
+              run: npm run lint
             - name: "📦 publish"
               run: npm publish --access public
               env:
